@@ -1,14 +1,16 @@
 console.log("hello world");
 song();
 function refrain() {
-  console.log("You're as smooth as Tennessee whiskey");
-  console.log("You're as sweet as strawberry wine");
-  console.log("You're as warm as a glass of brandy");
-  console.log("and honey, i stay stoned on your love all the time");
-  console.log("");
-  console.log("");
+    let words = "";
+  words += "You're as smooth as Tennessee whiskey\n"
+  words += "You're as sweet as strawberry wine\n"
+  words += "You're as warm as a glass of brandy\n"
+  words += "and honey, i stay stoned on your love all the time\n"
+  return (words);
 }
 function song() {
+    let r;
+    r = refrain();
   // verse 1
   console.log("Used to spend my nights out in a barroom");
   console.log("Liquor was the only love i'd known");
@@ -17,7 +19,7 @@ function song() {
   console.log("");
   console.log("");
 
-  refrain();
+  console.log (r);
 
   // verse 2
   console.log("I've looked for love in all the same old places");
@@ -27,9 +29,9 @@ function song() {
   console.log("");
   console.log("");
 
-  refrain();
+  console.log (r);
 
-  refrain();
+  console.log (r);
 
   console.log("You're as smooth as Tennessee whiskey");
   console.log("Tennessee whiskey");
